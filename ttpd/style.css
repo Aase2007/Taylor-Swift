@@ -1,0 +1,87 @@
+html, body {
+    overflow-x: hidden;
+}
+
+body {
+    margin-left: 0%;
+    margin-right: 0%;
+    background-color: #c7cac4;
+}
+
+#box {
+    display: flex;
+    flex-direction: column;
+    margin: -2;
+}
+
+h2 {
+    display: flex;
+    justify-content: center;
+    padding-right: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+#header {
+    font-family: "adobe-caslon-pro", serif;
+    font-weight: 700;
+    font-style: thin;
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    position: fixed;
+    z-index: 1;
+    height: 7%;
+    width: 100%;
+    background-color:#c7cac4;
+    margin-top: -0.55%;
+    box-shadow: 0px 0px 5px;
+}
+#tour, #title, #about {
+    font-size: 200%;
+}
+#titleBox {
+    display: flex;
+}
+.title-box {
+    width: 100%;
+}
+
+#main{
+    font-family: "adobe-caslon-pro", serif;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: end;
+    margin-top: 10vh;
+    width: 100vw;
+}
+#side {
+    display: flex;
+    flex-direction: row;
+}
+#tracklist {
+    display: flex;
+    flex-direction: column;
+    width: 30vw;
+    border-left-style: double;
+    border-right-style: double;
+    border-width: thick;
+    border-color: black;
+    margin-left: 1vw;
+}
+.undertittel {
+    font-size: larger;
+}
+#hovedside {
+    display: flex;
+    align-content: flex-start;
+    flex-direction: column;
+    width: 900px;
+}
+.written {
+    margin-top: 1000px;
+}

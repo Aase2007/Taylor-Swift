@@ -1,0 +1,122 @@
+
+
+body {
+    margin: 0;
+    overflow-x: hidden;
+    background-color: #5F6597;
+}
+h2 {
+    display: flex;
+    align-self: center;
+    font-size: 5vh;
+}
+a {
+    color:black;
+    text-decoration: none;
+}
+#header {
+    font-family: "neue-haas-grotesk-display", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    position: fixed;
+    height: 7%;
+    width: 100vw;
+    background-color:#ffffff;
+    z-index: 3;
+}
+img {
+    height: 6vh;
+}
+#tour, #title, #about {
+    font-size: 200%;
+    margin-left: 2vw;
+    margin-top: 0.5vh;
+}
+
+
+#top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation-name: picture;
+    animation-duration: 60s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: backwards;
+}
+#overskrift {
+    margin-top: 10vh;
+    font-family: "ambroise-francois-std", serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 400%;
+}
+#countdown-container {
+    font-family: "neue-haas-grotesk-display", sans-serif;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+#next-show {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+#container {
+    font-family: "neue-haas-grotesk-display", sans-serif;
+    width: 100vw;
+    position: relative;
+}
+#tour-dates {
+    height: 50vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+#upcoming {
+    position:relative;
+}
+label {
+    position: absolute;
+    top: 100%;
+    font-size: 3vh;
+    width: 100vw;
+    height: 20vh;
+    margin-top: -15vh;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    background-image: #5F6597;
+
+}
+input {
+    display: none;
+}
+
+label:after {
+    content: "show more";
+}
+input:checked + label:after {
+    content: "show less";
+}
+input:checked ~ div#tour-dates {
+    height: fit-content;
+    overflow: visible;
+}
+
+.titles {
+    position: sticky;
+    top: 0;
+}
+#alreadybeen-shows {
+    display: flex;
+    flex-direction: column-reverse;
+}
